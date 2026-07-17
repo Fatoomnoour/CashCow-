@@ -9,6 +9,9 @@ const preparationVideo =
 const trainingVideo =
   "https://www.loom.com/share/a3c561d4597b472e83846071063aa1e4";
 const facebookGroup = "https://www.facebook.com/share/g/1CMba21g7u/";
+const calendlyUrl =
+  "https://calendly.com/mahmoud_faragk50/cash-cow-system-discovery-call";
+const linkedinUrl = "https://www.linkedin.com/in/mahmoudfaragk50";
 
 type StepId = "step1" | "step2" | "step3" | "step4";
 type CompletionState = Record<StepId, boolean>;
@@ -258,9 +261,48 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="engineer-card" aria-labelledby="engineer-name">
+          <div className="engineer-avatar" aria-hidden="true">
+            MF
+          </div>
+          <div className="engineer-copy">
+            <span className="engineer-eyebrow">YOUR STRATEGY CALL HOST</span>
+            <h2 id="engineer-name">Eng. Mahmoud Farag</h2>
+            <p>
+              Business Coach at Cash Cow System, supporting coaches, trainers,
+              consultants, and agency owners with a clear path toward stronger,
+              more scalable results.
+            </p>
+          </div>
+          <div className="engineer-actions">
+            <a
+              className="primary-button"
+              href={calendlyUrl}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Book a discovery call <span aria-hidden="true">↗</span>
+            </a>
+            <a
+              className="linkedin-button"
+              href={linkedinUrl}
+              target="_blank"
+              rel="noreferrer"
+            >
+              View LinkedIn profile <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </section>
+
         <footer className="page-footer">
           <img src="assets/cash-cow-logo.png" alt="Cash Cow System" />
-          <p>Your strategy call is booked. We’ll see you soon.</p>
+          <p>
+            Your strategy call is booked. Connect with{" "}
+            <a href={linkedinUrl} target="_blank" rel="noreferrer">
+              Eng. Mahmoud Farag
+            </a>
+            .
+          </p>
         </footer>
       </div>
     </main>

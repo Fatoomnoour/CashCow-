@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Your Strategy Call Is Confirmed | Cash Cow System",
+  title: "Eng. Mahmoud Farag | Cash Cow System Strategy Call",
   description:
-    "Complete these preparation steps before your Cash Cow System strategy call.",
+    "Prepare for your Cash Cow System discovery call with Eng. Mahmoud Farag.",
 };
 
 export default function RootLayout({
